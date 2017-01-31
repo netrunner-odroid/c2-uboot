@@ -1,0 +1,15 @@
+Index: c2-uboot-binaries-0/Makefile
+===================================================================
+--- c2-uboot-binaries-0.orig/Makefile
++++ c2-uboot-binaries-0/Makefile
+@@ -1,6 +1,6 @@
+ install:
+-	-mkdir -p /usr/share/c2_uboot
+-	-install -m 0644 bl1.bin.hardkernel /usr/share/c2_uboot
+-	-install -m 0644 u-boot.bin /usr/share/c2_uboot
+-	-install -m 0755 sd_fusing.sh /usr/share/c2_uboot
++	-mkdir -p $(DESTDIR)/usr/share/c2_uboot
++	-install -m 0644 bl1.bin.hardkernel $(DESTDIR)/usr/share/c2_uboot
++	-install -m 0644 u-boot.bin $(DESTDIR)/usr/share/c2_uboot
++	-install -m 0755 sd_fusing.sh $(DESTDIR)/usr/share/c2_uboot
+ 	
